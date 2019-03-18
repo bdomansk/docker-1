@@ -1,0 +1,2 @@
+docker service rm $(docker service ls -q)
+# rm :  Remove one or more services

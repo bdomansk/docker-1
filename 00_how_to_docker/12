@@ -1,0 +1,6 @@
+docker run -d --name spawning-pool --restart=on-failure:10 -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings -v hatchery:/var/lib/mysql mysql --default-authentication-plugin=mysql_native_password
+# --restart=on-failure[:max-retries] Restart only if the container exits with a non-zero exit status. 
+# Optionally, limit the number of restart retries the Docker daemon attempts.
+# -e set simple (non-array) environment variables
+# -v flag mounts the current working directory into the container.
+# https://github.com/docker-library/wordpress/issues/313 - --default-authentication-plugin=mysql_native_password

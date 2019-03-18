@@ -1,0 +1,3 @@
+docker network create -d overlay overmind
+# -d Driver to manage Network (default "bridge")
+# check : docker network ls

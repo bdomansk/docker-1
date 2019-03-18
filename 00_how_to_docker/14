@@ -1,0 +1,5 @@
+docker run -d --name lair -p 8080:80 --link spawning-pool:mysql wordpress
+## https://docs.docker.com/network/links/
+# --link Links allow securely transfer information about one container to another container
+# check 192.168.99.100:8080
+# docker-machine ip Char = http://192.168.99.100 ; 8080 - port
